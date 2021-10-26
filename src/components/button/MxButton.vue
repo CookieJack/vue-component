@@ -87,12 +87,13 @@ $HEIGHT_DEFAULT: ($FONT_SIZE_DEFAULT * 2.5);
 
 @mixin LOADING_COLOR($bgcolor){
   width: ($WIDTH_DEFAULT * 1.375);
-  transition: width .2s ease-out;
+  transition: all .2s ease-out;
   background-color: rgba($color: $bgcolor, $alpha: 0.4);
   color: white;
   cursor: progress;
   border: none;
   box-shadow: none;
+  padding: 8px 0px;
 }
 
 @mixin BASIC_CONFIG($bgcolor, $color) {
@@ -102,13 +103,12 @@ $HEIGHT_DEFAULT: ($FONT_SIZE_DEFAULT * 2.5);
   align-items: center;
   @include DEFAULT_COLOR($bgcolor, $color);
   cursor: pointer;
-  width: $WIDTH_DEFAULT;
-  height: $HEIGHT_DEFAULT;
   user-select: none;
   line-height: ($FONT_SIZE_DEFAULT * 1.5);
   box-shadow: 1px 1px 8px 1px rgba($color: black, $alpha: 0.2);
-  transition: width .2s ease-in;
+  transition: all .2s ease-in;
   border: 1px solid $bgcolor;
+  padding: 8px 15px;
 
   &:active {
     box-shadow: 0px 0px 0px 0px rgba($color: black, $alpha: 0.2);

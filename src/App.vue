@@ -4,7 +4,7 @@
     <mx-button type="success" round plain>成功</mx-button>
     <mx-button type="info" plain disabled @click="handleClick">提示</mx-button>
     <mx-button type="warning" circle>警告</mx-button>
-    <mx-button type="danger" :loading="loading" @click="handleClick">危险</mx-button>
+    <mx-button type="danger" :loading="loading" @click="handleClick">危险hrdcghjdyjdyjdydty</mx-button>
   </div>
 </template>
 
